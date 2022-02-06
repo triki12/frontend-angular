@@ -1,0 +1,61 @@
+<div class="col-md-9">
+    <div class="card card-primary card-outline">
+      <div class="card-header">
+        <h3 class="card-title">Update produit</h3>
+        <div class="card-tools">
+        
+        </div>
+        <!-- /.card-tools -->
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body p-0">
+        <div class="mailbox-controls">
+
+          <!-- Check all button -->
+          <div class="btn-group">
+            <a routerLink="/admin/products" class="btn btn-default btn-sm"><i class="fas fa-reply"></i></a>
+          </div>
+          <!-- /.btn-group -->
+         
+           
+            <!-- /.btn-group -->
+          <!-- /.float-right -->
+        </div>
+        
+    <div class="content mat-elevation-z8">
+    <form> 
+        <div class="form-row m-3">
+            <div class="col-md-6">
+                <label for="news_banner">Name</label>
+                <input type="text" id="name" name="name"  class="form-control-file" [(ngModel)]="product.name">
+              </div>
+              <div class="col-md-6">
+                <label for="news_banner">category</label>
+                <input type="text" id="category" name="category" [(ngModel)]="product.category">
+              </div>
+              <div class="col-md-6">
+                <label for="news_banner">price</label>
+                <input type="text" id="price"  name="price" class="form-control-file" [(ngModel)]="product.price">
+              </div>
+              <div class="col-md-6">
+                <label for="news_banner">brand</label>
+                <input type="text" id="brand" name="brand"   class="form-control-file" [(ngModel)]="product.brand">
+              </div>
+              <div class="col-md-6">
+                <label for="news_banner">desc</label>
+                <input type="text" id="desc" name="desc"  class="form-control-file" [(ngModel)]="product.desc">
+              </div>
+              <!-- <div class="col-md-6">
+                <label for="news_banner">Image</label>
+                <input type="file" id="file" formControlName="image"   class="form-control-file"required="" accept="/127.0.0.1:8000/public">  -->
+                <!-- <input type="file" id="file" formControlName="image" (change)="onFileChange($event)"  class="form-control-file"required="" accept="/127.0.0.1:8000/public">  -->
+
+            <!-- </div> -->
+
+        </div>
+         <!-- <button class="btn btn-primary"  type="button" (click)="onSubmit2()">Submit</button>  -->
+         <button class="btn btn-primary"  type="button" >Submit</button> 
+
+
+    </form>
+  </div>

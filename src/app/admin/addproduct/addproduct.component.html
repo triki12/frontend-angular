@@ -1,0 +1,59 @@
+<div class="col-md-9">
+    <div class="card card-primary card-outline">
+      <div class="card-header">
+        <h3 class="card-title">Creer produit</h3>
+        <div class="card-tools">
+        
+        </div>
+        <!-- /.card-tools -->
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body p-0">
+        <div class="mailbox-controls">
+
+          <!-- Check all button -->
+          <div class="btn-group">
+            <a routerLink="/admin/products" class="btn btn-default btn-sm"><i class="fas fa-reply"></i></a>
+          </div>
+          <!-- /.btn-group -->
+         
+           
+            <!-- /.btn-group -->
+          <!-- /.float-right -->
+        </div>
+        
+    <div class="content mat-elevation-z8">
+    <form [formGroup]="tmyForm"> 
+        <div class="form-row m-3">
+            <div class="col-md-6">
+                <label for="news_banner">Name</label>
+                <input type="text" id="name" formControlName="name"  class="form-control-file"required="">
+              </div>
+              <div class="col-md-6">
+                <label for="news_banner">category</label>
+                <input type="text" id="category"formControlName="category" class="form-control-file"required="">
+              </div>
+              <div class="col-md-6">
+                <label for="news_banner">price</label>
+                <input type="text" id="price"  formControlName="price"  class="form-control-file"required="">
+              </div>
+              <div class="col-md-6">
+                <label for="news_banner">brand</label>
+                <input type="text" id="brand" formControlName="brand"   class="form-control-file"required="">
+              </div>
+              <div class="col-md-6">
+                <label for="news_banner">desc</label>
+                <input type="text" id="desc" formControlName="desc"  class="form-control-file"required="">
+              </div>
+              <div class="col-md-6">
+                <label for="news_banner">Image</label>
+                <input type="file" id="file" formControlName="image" (change)="onFileChange($event)"  class="form-control-file"required="" accept="/127.0.0.1:8000/public"> 
+ 
+            </div>
+
+        </div>
+         <button class="btn btn-primary"  type="button" (click)="onSubmit2()">Submit</button> 
+        
+
+    </form>
+  </div>
